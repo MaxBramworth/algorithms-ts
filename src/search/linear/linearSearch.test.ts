@@ -25,8 +25,11 @@ describe('Linear Search', () => {
 
     test('Simple Numbers', () => {
         const items = [15, 7, 1, 8, 43, 9, 81, 5];
+        const marling = ["deez", "balls"];
         const found = linearSearch(items, 8);
+        const beans = linearSearch(marling, "the funny")
 
         expect(found).toBe(3);
+        expect(beans).toBe(NO_MATCH);
     });
 })
